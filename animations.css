@@ -1,0 +1,96 @@
+.nav {
+    background-color: #324;
+    width: auto;
+  }
+  
+  .nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  .nav a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #b32d00;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  
+  .flex-container > div {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: auto;
+    line-height: 30px;
+    font-size: 60%;
+    background-color: rgb(211, 235, 255);
+    padding: black;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .flex-container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  
+  .flex-container2 > div {
+    position: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 30px;
+    font-size: 60%;
+    padding: black;
+  }
+  
+  footer {
+    width: auto;
+    margin-top: auto;
+    animation-name: MyFooter;
+    animation-duration: 20s;
+    animation-iteration-count: 100;
+  }
+  @keyframes MyFooter {
+    0% {
+      background-color: grey;
+    }
+    20% {
+      background-color: lightblue;
+    }
+    40% {
+      background-color: lightcyan;
+    }
+    60% {
+      background-color: lightgray;
+    }
+    80% {
+      background-color: lightsteelblue;
+    }
+    100% {
+      background-color: grey;
+    }
+  }
+
+  
+  @media screen and (min-width: 600px) {
+    div.flex-container2 {
+    width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    div.flex-container2 {
+      width: 80px;
+    }
+  }
